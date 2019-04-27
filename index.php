@@ -2,9 +2,23 @@
 	$cantidad=0;
 	$nombres;
 	//PHP es una lenguaje de expresiones
-	if ($nombres)
-	{
-		echo "Este mensaje es si la expresion devuelve true";
-		echo "<br />Linea 2: Este mensaje es si la expresion devuelve true";
-	}
-?>
+	?>
+	<table>
+		<tr>
+			<th>Nombres</th>
+			<th>Apellidos</th>
+			<th>DNI</th>
+		</tr>
+<?php if ($nombres): ?>
+	<tr>
+		<td>Luis</td>
+		<td>Gutierrez</td>
+		<td>12345678</td>
+	</tr>
+	<tr>
+		<td>Juan</td>
+		<td>Huaroto</td>
+		<td>123456789</td>
+	</tr>
+<?php endif; ?>
+	</table>
